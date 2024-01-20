@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "experiment": "ts-node experiment.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "getBlocknumber": "ts-node ./src/getBlockNumber.ts",
+    "getNtrnBalance": "ts-node ./src/getNtrnBalance.ts",
+    "transfer": "ts-node ./src/transferNtrn.ts",
+    "getCW20Balance": "ts-node ./src/getCW20Balance.ts",
+    "transferCW20": "ts-node ./src/transferCw20.ts"
   },
   "author": "B9lab",
   "license": "ISC",
@@ -13,6 +17,9 @@
     "ts-node": "10.7.0"
   },
   "dependencies": {
-    "@cosmjs/stargate": "0.28.2"
+    "@cosmjs/cosmwasm-stargate": "^0.32",
+    "@cosmjs/stargate": "^0.32",
+    "@types/node": "^20.11.5",
+    "typescript": "^5.3.3"
   }
 }
